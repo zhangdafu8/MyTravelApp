@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_head"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+    </android.support.v4.view.ViewPager>
+
+    <include
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/just_search"
+        >
+
+    </include>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nav_header_index"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/viewpager_head"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/recycleview"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/gainsboro"
+
+
+                >
+            </View>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view1"
+                >
+            </android.support.v7.widget.RecyclerView>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/recycleview2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/gainsboro"
+
+
+                >
+            </View>
+            //popNews
+            <LinearLayout
+                android:id="@+id/mainPop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/view2"
+                >
+                <ImageView
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/main_hot_news"
+                    />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="秋天真的来了，吃火锅就按这个地图走！"
+                    />
+
+            </LinearLayout>
+            //specialPrice
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/mainPop"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/main_spread1"
+                        android:layout_margin="5dp"
+
+                        />
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/main_spread2"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        />
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/main_spread3"
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/main_spread4"
+                    />
+                //travelLive
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/main_travle_online"
+                        android:layout_gravity="center_vertical"
+                        />
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="旅行直播"
+                        android:layout_gravity="center_vertical"
+                        />
+                </LinearLayout>
+
+                //video
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <!--//videoImage1-->
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--&gt;-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/videoImage1"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@drawable/main_travle_online_pic"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:layout_marginTop="20dp"-->
+                        <!--android:layout_marginLeft="40dp"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="发现美国好东西"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:layout_marginTop="40dp"-->
+                        <!--android:layout_marginLeft="5dp"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="资深老师解析，互动发红包"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--/>-->
+                    <!--<Button-->
+                        <!--android:layout_marginTop="70dp"-->
+                        <!--android:layout_marginLeft="65dp"-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:background="@drawable/main_travle_online_play"-->
+                        <!--/>-->
+                    <!--</RelativeLayout>-->
+                    <!--//videoImage2-->
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        >
+                        <ImageView
+                            android:id="@+id/videoImage2"
+                            android:layout_width="350dp"
+                            android:layout_height="200dp"
+                            android:background="@drawable/main_travle_online_pic2"
+                            />
+                        <TextView
+                            android:layout_alignRight="@id/videoImage2"
+                            android:layout_marginTop="20dp"
+                            android:paddingRight="120dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SPG首次直播"
+                            android:textColor="@color/white"
+                            />
+                        <TextView
+                            android:layout_alignRight="@id/videoImage2"
+                            android:layout_marginTop="50dp"
+                            android:paddingRight="5dp"
+                            android:layout_marginRight="80dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="北京长安W酒店，缔动帝都"
+                            android:gravity="right"
+                            android:textColor="@color/white"
+                            />
+                        <Button
+                            android:layout_alignRight="@id/videoImage2"
+                            android:layout_marginTop="90dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginRight="140dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/main_travle_online_play"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
